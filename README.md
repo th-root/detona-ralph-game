@@ -3,7 +3,7 @@
 ## Awesome JSGame Detona Ralph
 
 <p align="center">
-  <img src="./assets/images/detona-ralph.jpg" alt="JSGame Detona Ralph Logo">
+  <img src="./images/detona-ralph.jpg" alt="JSGame Detona Ralph Logo">
 </p>
 
 Bem-vindo ao **JSGame Detona Ralph**! Neste repositório, você encontrará um jogo divertido baseado no famoso filme "Detona Ralph". Este projeto não apenas oferece entretenimento, mas também demonstra várias técnicas avançadas de desenvolvimento de jogos em JavaScript.
