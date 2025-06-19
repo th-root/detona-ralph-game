@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 90px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.panel {
+    margin-top: 1rem;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f00;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    background-color: #3700ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.enemy {
+    background-color: #f00;
+}
