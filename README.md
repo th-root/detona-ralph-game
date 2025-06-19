@@ -31,8 +31,8 @@ Contribuições são bem-vindas! Se você deseja melhorar este jogo, adicionar n
 
 ### Créditos
 
-Este jogo foi desenvolvido como parte de um projeto educacional da Digital Innovation One.
+Este jogo foi desenvolvido como parte de um projeto educacional da Digital Innovation One com tutoria do professor Felipe Aguiar.
 
 ---
 
-Divirta-se jogando o **JSGame Detona Ralph** enquanto explora as técnicas modernas de desenvolvimento de jogos em JavaScript. Lembre-se de conferir o repositório original [aqui](https://github.com/digitalinnovationone/jsgame-detona-ralph) e deixar uma ⭐️ se você gostou do projeto!
+Divirta-se jogando o **JSGame Detona Ralph** enquanto explora as técnicas modernas de desenvolvimento de jogos em JavaScript. Lembre-se de conferir o repositório original [aqui](https://github.com/th-root/detona-ralph-game.git) e deixar uma ⭐️ se você gostou do projeto!
