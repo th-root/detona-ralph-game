@@ -51,3 +51,19 @@
 .menu-time h2:nth-child(2), .menu-score h2:nth-child(2) {
     margin-top: 1rem;
 }
+
+footer {
+    padding-top: 1rem;
+    background-color: #000;
+    color: #fff;
+}
+
+footer p {
+     text-align: center;
+     padding-bottom: 10px;
+}
+
+a {
+    color: #3700ff;
+    text-decoration: none;
+}
