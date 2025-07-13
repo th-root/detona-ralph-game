@@ -4,13 +4,16 @@ const state = {
         enemy: document.querySelector(".enemy"),
         timeLeft: document.querySelector("#time-left"),
         score: document.querySelector("#score"),
+        hero: document.querySelector("#hero"),
+        xp: document.querySelector("#xp"),
     },
 
     value: {        
         gameVelocity: 1000, // 1 second
         hitPosition: 0,
         result: 0,
-        currentTime: 60,
+        currentTime: 90,
+        score: 0,
     },
 
     actions: {
@@ -29,7 +32,7 @@ function countDown() {
         alert("Game Over! Your score is " + state.value.result);
         // Reset game state 
         state.value.result = 0;
-        state.value.currentTime = 60; // Reset time to 5 seconds
+        state.value.currentTime = 90; // Reinicia o tempo a cada 60 segundos
         state.view.score.textContent = state.value.result;  
         state.view.timeLeft.textContent = state.value.currentTime;
     }
@@ -70,20 +73,43 @@ function mooveEnemy() {
 
 };
 
-function addListenerHitBox() {
+function getXpByScore(score) {
 
+    switch (true) {
+            case (score < 10):
+                return "Ferro";
+            case (score < 20):
+                return "Bronze";
+            case (score < 30):
+                return "Prata";
+            case (score < 40):
+                return "Ouro";
+            case (score < 50):
+                return "Platina";
+            case (score < 60):
+                return "Ascendente";
+            case (score < 70):
+                return "Radiante";
+            default:
+                return "Imortal";
+    }
+}
+
+
+function addListenerHitBox() {
     state.view.squares.forEach((square) => {
         square.addEventListener("mousedown", () => {
             if (square.id === state.value.hitPosition) {
                 state.value.result++;
                 state.view.score.textContent = state.value.result;
+                state.view.xp.textContent = getXpByScore(state.value.result); // Atualiza XP
                 state.value.hitPosition = null;
                 playSound("hit.m4a");
             }
         });
     });
+}
 
-};
 
 function init() {
 
@@ -91,7 +117,7 @@ function init() {
     addListenerHitBox();
     
     state.value.score = 0;
-    state.value.timeLeft = 5; // 5 minutes in seconds
+    state.value.currentTime = 90; // Tempo inicial de 90 segundos
     
 };
 
